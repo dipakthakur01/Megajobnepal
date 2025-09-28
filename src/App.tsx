@@ -4,8 +4,8 @@ import { AuthProvider } from "./components/auth/AuthContext";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { LoadingFallback } from "./components/LoadingFallback";
 import { EmergencyApp } from "./components/EmergencyApp";
-
-import "/styles/globals.css";
+import "./index.css";
+import "./styles/globals.css";
 
 // Simple lazy loading without complex timeouts
 const MainLayout = lazy(() => import("./components/MainLayout").then(m => ({ default: m.MainLayout })));
